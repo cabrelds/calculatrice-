@@ -30,3 +30,15 @@ function updateDisplay() {
   document.getElementById('btn-shift')
     ?.classList.toggle('active', state.shift);
 }
+// ── Init ─────────────────────────────────────────
+const state = {
+  expression: '',
+  result: '0',
+  memory: 0,
+  shift: false,
+  isDegree: true,
+  justCalculated: false,
+  lastResult: '0',
+};
+
+updateDisplay();
