@@ -33,3 +33,44 @@ function formatNumber(n) {
   }
   return s;
 }
+function toggleMode() {
+  state.isDegree = !state.isDegree;
+  updateDisplay();
+}
+document.addEventListener('keydown', (e) => {
+  if (e.ctrlKey || e.altKey || e.metaKey) return;
+  const key = e.key;
+
+  if (key >= '0' && key <= '9') {
+    state.expression += key;
+    updateDisplay();
+    return;
+  }
+  if (key === 'Enter' || key === '=') {
+    updateDisplay();
+    return;
+  }
+  if (key === 'Backspace') {
+    state.expression = state.expression.slice(0, -1);
+    updateDisplay();
+    return;
+  }
+  if (key === 'Escape') {
+    state.expression = '';
+    state.result = '0';
+    updateDisplay();
+    return;
+  }
+  if (key === '+') { state.expression += '+'; updateDisplay(); return; }
+  if (key === '-') { state.expression += '−'; updateDisplay(); return; }
+  if (key === '*') { state.expression += '×'; updateDisplay(); return; }
+  if (key === '/') {
+    e.preventDefault();
+    state.expression += '÷';
+    updateDisplay();
+    return;
+  }
+  if (key === '.') { state.expression += '.'; updateDisplay(); return; }
+  if (key === '(') { state.expression += '('; updateDisplay(); return; }
+  if (key === ')') { state.expression += ')'; updateDisplay(); return; }
+});
