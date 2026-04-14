@@ -7,3 +7,10 @@ function calcExpE(val)  { return Math.exp(val); }
 // ── Constantes mathematiques ─────────────────────
 const CONST_PI = Math.PI;
 const CONST_E  = Math.E;
+// ── Puissances et racines ────────────────────────
+function calcSquare(val)      { return val * val; }
+function calcCube(val)        { return val * val * val; }
+function calcSqrt(val)        { return Math.sqrt(val); }
+function calcCbrt(val)        { return Math.cbrt(val); }
+function calcPow(base, exp)   { return Math.pow(base, exp); }
+function calcReciprocal(val)  { return 1 / val; }
