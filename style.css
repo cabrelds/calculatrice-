@@ -1,5 +1,4 @@
 /* Calculatrice Scientifique - SCILAB fx-9860 PRO */
-
 :root {
   --bg-page: #0e0f14;
   --calc-body: #1a1c25;
@@ -176,3 +175,57 @@ body {
 }
 
 .error-shake { animation: shake 0.4s ease; }
+/* ── Layout general ── */
+.calc-wrapper {
+  perspective: 1200px;
+  filter: drop-shadow(0 40px 80px rgba(0,0,0,0.9));
+}
+
+.calculator {
+  background: var(--calc-body);
+  border-radius: 16px;
+  padding: 16px;
+  width: 340px;
+  border: 1px solid var(--calc-accent);
+}
+
+.calc-brand { text-align: center; padding: 8px 0; }
+
+.brand-name {
+  font-family: var(--font-brand);
+  font-size: 1.1rem;
+  font-weight: 900;
+  color: var(--text-primary);
+  letter-spacing: 4px;
+}
+
+.brand-model {
+  font-family: var(--font-brand);
+  font-size: 0.6rem;
+  color: var(--text-dim);
+  display: block;
+  letter-spacing: 2px;
+}
+
+.brand-line {
+  height: 1px;
+  background: linear-gradient(to right, transparent, var(--text-primary), transparent);
+  margin-top: 6px;
+}
+/* ── Grille boutons ── */
+.buttons-area {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0;
+}
+.button-row { display: grid; gap: 6px; }
+
+.row-special { grid-template-columns: repeat(5, 1fr); }
+.row-trig    { grid-template-columns: repeat(5, 1fr); }
+.row-powers  { grid-template-columns: repeat(5, 1fr); }
+.row-mem     { grid-template-columns: repeat(5, 1fr); }
+.row-paren   { grid-template-columns: repeat(5, 1fr); }
+.row-digits  { grid-template-columns: repeat(4, 1fr); }
+.row-equal   { grid-template-columns: repeat(5, 1fr); }
+

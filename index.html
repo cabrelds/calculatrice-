@@ -1,12 +1,28 @@
-<!DOCTYPE html>
-<html lang="fr">
-<head>
-  <meta charset="UTF-8" />
-  <title>Calculatrice Scientifique</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body>
+<!-- Écran -->
+      <div class="screen-housing">
+        <div class="screen">
+          <div class="screen-inner">
 
-  <script src="script.js"></script>
-</body>
-</html>
+            <!-- Barre du haut -->
+            <div class="screen-top-bar">
+              <div class="indicators">
+                <span class="indicator" id="ind-shift">SHIFT</span>
+                <span class="indicator" id="ind-alpha">ALPHA</span>
+                <span class="indicator" id="ind-mode">DEG</span>
+                <span class="indicator" id="ind-mem">M</span>
+              </div>
+              <div class="screen-label">NATURAL-V.P.A.M.</div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+
+            <!-- Affichage expression -->
+      <div class="expression-display" id="expression">0</div>
+
+            <!-- Affichage résultat -->
+      <div class="result-display" id="result"></div>
+
+            <!-- Curseur -->
+     <div class="cursor-bar" id="cursor"></div>
