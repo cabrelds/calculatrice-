@@ -16,3 +16,7 @@ function calcTan(val) {
   if (Math.abs(v) > 1e14) return Infinity;
   return v;
 }
+// ── Fonctions hyperboliques ──────────────────────
+function calcSinh(val)  { return Math.sinh(val); }
+function calcCosh(val)  { return Math.cosh(val); }
+function calcTanh(val)  { return Math.tanh(val); }
