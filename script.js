@@ -4,3 +4,6 @@ function calcLn(val)    { return Math.log(val); }
 function calcLog2(val)  { return Math.log2(val); }
 function calcPow10(val) { return Math.pow(10, val); }
 function calcExpE(val)  { return Math.exp(val); }
+// ── Constantes mathematiques ─────────────────────
+const CONST_PI = Math.PI;
+const CONST_E  = Math.E;
