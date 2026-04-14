@@ -36,3 +36,10 @@
   background: linear-gradient(to right, transparent, var(--text-primary), transparent);
   margin-top: 6px;
 }
+/* ── Grille boutons ── */
+.buttons-area {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 8px 0;
+}
