@@ -102,3 +102,24 @@ document.querySelector('[data-action="shift"]')
   ?.addEventListener('click', () => {
     toggleShift();
 });
+// ── Tout effacer AC ──────────────────────────────
+function clearAll() {
+  state.expression = '';
+  state.result = '0';
+  state.justCalculated = false;
+  state.shift = false;
+  updateDisplay();
+}
+
+// ── Backspace ────────────────────────────────────
+function backspace() {
+  if (state.justCalculated) {
+    state.expression = '';
+    state.result = '0';
+    state.justCalculated = false;
+  } else {
+    state.expression = state.expression.slice(0, -1);
+    state.result = state.expression ? '' : '0';
+  }
+  updateDisplay();
+}
