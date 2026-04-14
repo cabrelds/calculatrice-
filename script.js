@@ -23,3 +23,8 @@ function calcFactorial(n) {
   for (let i = 2; i <= n; i++) result *= i;
   return result;
 }
+// ── Valeur absolue et arrondi ────────────────────
+function calcAbs(val)   { return Math.abs(val); }
+function calcFloor(val) { return Math.floor(val); }
+function calcCeil(val)  { return Math.ceil(val); }
+function calcRound(val) { return Math.round(val); }
