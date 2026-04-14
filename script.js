@@ -74,3 +74,13 @@ document.addEventListener('keydown', (e) => {
   if (key === '(') { state.expression += '('; updateDisplay(); return; }
   if (key === ')') { state.expression += ')'; updateDisplay(); return; }
 });
+// ── Gestion SHIFT ────────────────────────────────
+function toggleShift() {
+  state.shift = !state.shift;
+  updateDisplay();
+}
+
+document.querySelector('[data-action="shift"]')
+  ?.addEventListener('click', () => {
+    toggleShift();
+});
