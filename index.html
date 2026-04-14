@@ -3,9 +3,82 @@
 <head>
   <meta charset="UTF-8" />
   <title>Calculatrice Scientifique</title>
+  <link rel="preconnect"href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&family=Orbitron:wght@400;700;900&family=Exo+2:wght@300;400;600&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+   <div class="calc-wrapper">
+<!-- Pied de la calculatrice -->
+      <div class="calc-footer">
+        <div class="footer-grip"></div>
+        <div class="footer-grip"></div>
+        <div class="footer-grip"></div>
+      </div>
+    <div class="calculator">
+
+      <!-- En-tête marque -->
+      <div class="calc-brand">
+        <span class="brand-name">SCILAB</span>
+        <span class="brand-model">fx-9860 PRO</span>
+        <div class="brand-line"></div>
+      </div>
+<!-- Zone de boutons -->
+ <!-- Rangée AC et effacement -->
+        <div class="button-row row-special">
+          <button class="btn btn-special" data-action="shift" id="btn-shift">SHIFT</button>
+          <button class="btn btn-special" data-action="mode">MODE</button>
+          <button class="btn btn-special" data-action="ans">ANS</button>
+          <button class="btn btn-clear-all" data-action="ac">AC</button>
+          <button class="btn btn-backspace" data-action="backspace">⌫</button>
+        </div>
+<!-- Parenthèses -->
+        <div class="button-row row-paren">
+          <button class="btn btn-paren" data-action="open_paren">(</button>
+          <button class="btn btn-paren" data-action="close_paren">)</button>
+          <button class="btn btn-func" data-action="percent">%</button>
+          <button class="btn btn-equal" data-action="equals">=</button>
+        </div>
+
+      <div class="buttons-area">
+
+        <!-- Rangée 7 8 9 ÷ -->
+        <div class="button-row row-digits">
+          <button class="btn btn-digit" data-action="digit" data-value="7">7</button>
+          <button class="btn btn-digit" data-action="digit" data-value="8">8</button>
+          <button class="btn btn-digit" data-action="digit" data-value="9">9</button>
+          <button class="btn btn-op" data-action="op" data-value="÷">÷</button>
+        </div>
+<!-- Rangée chiffres 4 5 6 -->
+        <div class="button-row row-digits">
+          <button class="btn btn-digit" data-action="digit" data-value="4">4</button>
+          <button class="btn btn-digit" data-action="digit" data-value="5">5</button>
+          <button class="btn btn-digit" data-action="digit" data-value="6">6</button>
+          <button class="btn btn-op" data-action="op" data-value="×">×</button>
+        </div>
+
+        <!-- Rangée chiffres 1 2 3 -->
+        <div class="button-row row-digits">
+          <button class="btn btn-digit" data-action="digit" data-value="1">1</button>
+          <button class="btn btn-digit" data-action="digit" data-value="2">2</button>
+          <button class="btn btn-digit" data-action="digit" data-value="3">3</button>
+          <button class="btn btn-op" data-action="op" data-value="−">−</button>
+        </div>
+
+        <!-- Rangée 0 . ± + = -->
+        <div class="button-row row-digits">
+          <button class="btn btn-digit btn-zero" data-action="digit" data-value="0">0</button>
+          <button class="btn btn-digit" data-action="dot">.</button>
+          <button class="btn btn-op" data-action="negate">±</button>
+          <button class="btn btn-op" data-action="op" data-value="+">+</button>
+        </div>
+
+      </div>
+
+
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
