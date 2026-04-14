@@ -13,6 +13,24 @@ function memPlus() {
   const val = parseFloat(state.result);
   if (!isNaN(val)) state.memory += val;
   updateDisplay();
+
+}
+// ── ANS (dernier resultat) ───────────────────────
+function useAns() {
+  state.expression += state.lastResult;
+  updateDisplay();
+}
+
+// ── Negation ─────────────────────────────────────
+function negate() {
+  if (state.expression.startsWith('-')) {
+    state.expression = state.expression.slice(1);
+  } else if (state.expression) {
+    state.expression = '-' + state.expression;
+  } else {
+    state.expression = '-';
+  }
+  updateDisplay();
 }
 
 function memMinus() {
