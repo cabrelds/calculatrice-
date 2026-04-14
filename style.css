@@ -72,3 +72,26 @@ body {
   --btn-back-bg: #2a2010;
   --btn-back-text: #ffb74d;
 }
+/* ── Style boutons de base ── */
+.btn {
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  font-weight: 600;
+  padding: 10px 6px;
+  transition: transform 0.08s, box-shadow 0.08s;
+  width: 100%;
+}
+
+.btn:active { transform: translateY(2px); }
+.btn-digit  { background: var(--btn-digit-bg); color: var(--btn-digit-text); }
+.btn-op     { background: var(--btn-op-bg);    color: var(--btn-op-text); }
+.btn-func   { background: var(--btn-func-bg);  color: var(--btn-func-text); font-size: 0.75rem; }
+.btn-equal  { background: var(--btn-equal-bg); color: var(--btn-equal-text); font-size: 1.2rem; font-weight: 700; }
+.btn-clear-all { background: var(--btn-clear-bg); color: var(--btn-clear-text); }
+.btn-mem    { background: var(--btn-mem-bg);   color: var(--btn-mem-text); font-size: 0.75rem; }
+.btn-paren  { background: var(--btn-paren-bg); color: var(--btn-paren-text); }
+.btn-special { background: var(--btn-special-bg); color: var(--btn-special-text); font-size: 0.75rem; }
+.btn-backspace { background: var(--btn-back-bg); color: var(--btn-back-text); }
