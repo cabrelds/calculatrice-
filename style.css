@@ -1,1 +1,40 @@
 /* Calculatrice Scientifique - SCILAB fx-9860 PRO */
+
+:root {
+  --bg-page: #0e0f14;
+  --calc-body: #1a1c25;
+  --calc-body-light: #22253a;
+  --calc-accent: #2d3050;
+  --calc-edge: #13141e;
+  --calc-shadow: #0a0b10;
+
+  --screen-bg: #0d1a0d;
+  --screen-glass: rgba(20, 40, 20, 0.85);
+  --screen-border: #2a4a2a;
+  --screen-glow: rgba(100, 255, 100, 0.08);
+  --text-primary: #a8ff78;
+  --text-dim: #5a8c5a;
+  --text-expr: #d4ff9e;
+  --text-result: #78ffb4;
+
+  --font-display: 'Share Tech Mono', monospace;
+  --font-brand: 'Orbitron', sans-serif;
+  --font-body: 'Exo 2', sans-serif;
+}
+
+/* ── Reset general ── */
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: var(--bg-page);
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-body);
+  padding: 20px;
+}
