@@ -38,3 +38,37 @@ body {
   font-family: var(--font-body);
   padding: 20px;
 }
+/* ── Variables boutons ── */
+:root {
+  --btn-digit-bg: #252838;
+  --btn-digit-top: #2e3248;
+  --btn-digit-text: #e8eaf6;
+
+  --btn-op-bg: #1e2d4a;
+  --btn-op-top: #263861;
+  --btn-op-text: #64b5f6;
+
+  --btn-func-bg: #1c2535;
+  --btn-func-top: #22304a;
+  --btn-func-text: #90caf9;
+  --btn-func-shift: #ff8a65;
+
+  --btn-clear-bg: #4a1a1a;
+  --btn-clear-text: #ff5252;
+
+  --btn-equal-bg: #1a3a5c;
+  --btn-equal-text: #ffffff;
+  --btn-equal-glow: rgba(30, 120, 200, 0.5);
+
+  --btn-mem-bg: #1a2820;
+  --btn-mem-text: #80cbc4;
+
+  --btn-paren-bg: #221830;
+  --btn-paren-text: #f48fb1;
+
+  --btn-special-bg: #1e1a30;
+  --btn-special-text: #ce93d8;
+
+  --btn-back-bg: #2a2010;
+  --btn-back-text: #ffb74d;
+}
