@@ -123,3 +123,25 @@ function backspace() {
   }
   updateDisplay();
 }
+// ── Pourcentage ──────────────────────────────────
+function calcPercent() {
+  if (state.expression) {
+    const val = parseFloat(state.expression);
+    if (!isNaN(val)) {
+      state.expression = formatNumber(val / 100);
+      updateDisplay();
+    }
+  }
+}
+
+// ── Notation scientifique EXP ────────────────────
+function addExpNotation() {
+  state.expression += 'e';
+  updateDisplay();
+}
+
+// ── Modulo ───────────────────────────────────────
+function calcMod() {
+  state.expression += '%';
+  updateDisplay();
+}
